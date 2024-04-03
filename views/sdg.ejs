@@ -1,0 +1,20 @@
+<%- include('./partials/head.ejs') %>
+<a><h1 class="align margintop">SDG</h1></a>
+<article class="container">
+    <section class="wrapper">
+        <div class="margin">
+            <% if (sdg.icon) { %>
+            <img  src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.name %>">
+            <% } %>
+        </div>
+        <h1> <%= sdg.title %> </h1>
+        <h2 class="margin">Nummer: <%= sdg.number %></h2>
+        <p>Beschrijving: <%= sdg.description %></p>
+    </div>
+    <div class="button-wrapper"> 
+        <a href="/">
+            <button class="btn outline">Terug naar Homepagina</button>
+        </a>
+        </div>
+    </section>
+</article>

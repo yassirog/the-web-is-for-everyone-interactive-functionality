@@ -1,0 +1,18 @@
+<%- include('./partials/headinlog.ejs') %>
+
+<h1>Login</h1>
+<h2>Kies uw bedrijf om te beginnen met werken!</h2>
+
+<section class="sdgarticle">
+    <form method="POST" action="">
+        <select name="companies" id="hfcompany">
+            <% companies.forEach(company => { %>
+                <option value="<%=company.id%>" name="bedrijf" id="bedrijf"><%= company.name %></option>
+                <% }) %>
+        </select>
+        <a>
+            <input type="submit" value="Login">
+        </a>
+    </form>
+    </section>
+

@@ -1,0 +1,36 @@
+<%- include('./partials/head.ejs') %>
+
+<!-- Header section -->
+<section class="header">
+  <div class="title-wrapper">
+    <h1 class="sweet-title">
+      <span data-text="Hand">HAND</span>
+      <span data-text="Foot">FOOT</span>
+      <span data-text="Print">PRINT</span>
+    </h1>
+    <span class="top-title">Welkom bij de</span>
+    <span class="bottom-title">website!</span>
+  </div>
+</section>
+<h2 class="headertext">Wilt u inloggen scroll dan naar beneden!</h2>
+
+<!-- Login section -->
+<section class="margin">
+  <h2>Kies uw bedrijf om te beginnen met werken!</h2>
+</section>
+
+<article class="flex">
+    <form method="POST" action="">
+      <div class="custom-select">
+        <select name="companies" id="hfcompany">
+          <option value="" disabled selected>Selecteer een bedrijf</option>
+          <% companies.forEach(company => { %>
+          <option value="<%=company.id%>" name="bedrijf" id="bedrijf">
+            <%= company.name %>
+          </option>
+          <% }) %>
+        </select>
+      </div>
+      <input class="btn" type="submit" value="Login" />
+    </form>
+</article>

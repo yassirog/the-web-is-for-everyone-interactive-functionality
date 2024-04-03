@@ -1,0 +1,49 @@
+<%- include('./partials/headinlog.ejs') %>
+
+<h2><%= company.name %> <%= company.id %></h2>
+
+<section class="flex">
+  <form method="POST" action="">
+    <h2>Kies uw type stakeholder</h2>
+    <div class="wrapper flex">
+        <input type="radio" id="option-1" name="medewerkers">
+        <label for="option-1" class="option option-1">
+            <span>Medewerkers</span>
+        </label>
+        
+        <input type="radio" id="option-2" name="financiers">
+        <label for="option-2" class="option option-2">
+            <span>Financiërs</span>
+        </label>
+        
+        <input type="radio" id="option-3" name="leveranciers">
+        <label for="option-3" class="option option-3">
+            <span>Leveranciers</span>
+        </label>
+        
+        <input type="radio" id="option-4" name="klanten">
+        <label for="option-4" class="option option-4">
+            <span>Klanten</span>
+        </label>
+        
+        <input type="radio" id="option-5" name="omgeving">
+        <label for="option-5" class="option option-5">
+            <span>Omgeving</span>
+        </label>
+    </div>
+</section>
+
+<section class="flex">
+<div class="wrapper">
+    <label for="name">Naam</label>
+    <textarea name="message" id="name"  required placeholder="Typ hier uw naam"></textarea>
+    <a>
+        <input type="submit" value="Opslaan">
+    </a>
+</div>
+
+</form>
+
+</section>
+
+

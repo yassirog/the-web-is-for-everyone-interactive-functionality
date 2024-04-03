@@ -1,0 +1,316 @@
+/* ===============
+    MAIN & ROOT CSS 
+   =============== */
+:root{
+    /* colors */
+    --black: #000;
+    --white: #fff;
+    --background-color: #272932;
+    --primarypurple: #AD97C9;
+
+    /*fonts*/
+    --general-font: 'Dosis', 'Helvetica', Sans-Serif;
+    --card-font: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--card-font);
+}
+
+body {
+    background: var(--background-color);
+    height: 100vh;
+}
+
+/* ===============
+    HEADER CSS
+   =============== */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+    padding: 2.5rem;
+}
+
+.title-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -10deg);
+}
+
+.top-title {
+    order: 1;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.bottom-title {
+    order: 3;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+}
+
+.sweet-title {
+    order: 2;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 6rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px var(--primarypurple), 2px 2px 1px var(--primarypurple), 4px 2px 1px var(--primarypurple),
+    3px 3px 1px var(--primarypurple), 5px 3px 1px var(--primarypurple), 4px 4px 1px var(--primarypurple),
+    6px 4px 1px var(--primarypurple), 5px 5px 1px var(--primarypurple), 7px 5px 1px var(--primarypurple),
+    6px 6px 1px var(--primarypurple), 8px 6px 1px var(--primarypurple), 7px 7px 1px var(--primarypurple),
+    9px 7px 1px var(--primarypurple);
+
+    span {
+    display: block;
+    position: relative;
+
+    &:before {
+        content: attr(data-text);
+        position: absolute;
+        text-shadow: 2px 2px 1px var(--primarypurple), -1px -1px 1px var(--primarypurple),
+    -2px 2px 1px var(--primarypurple), 1px -1px 1px var(--primarypurple);
+        z-index: 1;
+    }
+
+    &:nth-child(1) {
+        padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+        padding-left: 2.25rem;
+    }
+    }
+}
+
+.headertext {
+    text-align: center;
+    margin-top: -15%;
+    margin-bottom: 20%;
+    font-weight: 500;
+
+}
+
+/* ===============
+    TEXT 
+   =============== */
+
+h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+p {
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.maxwidth {
+    max-width: 50%;
+}
+
+img {
+    height: 130px;
+    border-radius: 5px;
+}
+
+.sdglist {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    list-style: none;
+}
+
+header {
+    margin: 5em;
+    text-align: center;
+}
+
+.sdgarticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.margintop {
+    margin-top: 1em;
+}
+
+.marginbot {
+    margin-bottom: 2em;
+}
+img{
+box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;}
+
+.infogrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 50px;
+        margin: 1em;
+}
+
+.margin {
+    margin: 1em;
+}
+
+/* ===============
+    SDG DETAIL PAGINA 
+   =============== */
+.container {
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 15px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    width: auto;
+    margin: 5em
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+}
+
+h1{
+    color: rgba(255,255,255,0.98);
+    font-size: 2rem;
+}
+
+p {
+    max-width: 65ch;
+    margin: auto;
+    float: none;
+    color: #fff;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
+.button-wrapper{
+    margin-top: 18px;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+    background-color:#AD97C9;
+    margin-top: 1em;
+    margin-bottom: 20em;
+}
+
+.outline {
+    background: transparent;
+    color: var(--primarypurple);
+    border: 1px solid var(--primarypurple);
+    transition: all .3s ease;
+    
+}
+
+.align {
+    text-align: center;
+}
+
+.outline:hover{
+    transform: scale(1.125);
+    transition: all .3s ease;
+}
+
+li {
+    transition: all .3s ease;
+
+}
+
+li:hover {
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+
+/* TESSTT */
+
+.custom-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-select select {
+    /* Verwijder display: none; */
+    width: 100%; /* Zorg ervoor dat de selectie de volledige breedte inneemt */
+    padding: 8px 16px;
+    border: 1px solid var(--black); /* Voeg een rand toe */
+    border-radius: 12px; /* Afgeronde hoeken */
+    background-color: var(--primarypurple); /* Achtergrondkleur voor de geselecteerde optie */
+    color: var(--black); /* Tekstkleur */
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: var(--black);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-items div,
+.select-selected {
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
