@@ -1,33 +1,33 @@
 <%- include('./partials/headinlog.ejs') %>
 
-<h2><%= company.name %> <%= company.id %></h2>
+<h1><%= company.name %></h1>
 
 <section class="flex">
   <form method="POST" action="">
     <h2>Kies uw type stakeholder</h2>
-    <div class="wrapper flex">
-        <input type="radio" id="option-1" name="medewerkers">
-        <label for="option-1" class="option option-1">
+    <div class="wrapper">
+        <input type="radio" id="medewerkers" name="medewerkers">
+        <label for="medewerkers" class="option option-1">
             <span>Medewerkers</span>
         </label>
         
-        <input type="radio" id="option-2" name="financiers">
-        <label for="option-2" class="option option-2">
+        <input type="radio" id="financiers" name="financiers">
+        <label for="financiers" class="option option-2">
             <span>Financiërs</span>
         </label>
         
-        <input type="radio" id="option-3" name="leveranciers">
-        <label for="option-3" class="option option-3">
+        <input type="radio" id="leveranciers" name="leveranciers">
+        <label for="leveranciers" class="option option-3">
             <span>Leveranciers</span>
         </label>
         
-        <input type="radio" id="option-4" name="klanten">
-        <label for="option-4" class="option option-4">
+        <input type="radio" id="klanten" name="klanten">
+        <label for="klanten" class="option option-4">
             <span>Klanten</span>
         </label>
         
-        <input type="radio" id="option-5" name="omgeving">
-        <label for="option-5" class="option option-5">
+        <input type="radio" id="omgeving" name="omgeving">
+        <label for="omgeving" class="option option-5">
             <span>Omgeving</span>
         </label>
     </div>
@@ -35,14 +35,21 @@
 
 <section class="flex">
 <div class="wrapper">
-    <label for="name">Naam</label>
-    <textarea name="message" id="name"  required placeholder="Typ hier uw naam"></textarea>
+    <div class="field">
+        <label for="name">Naam</label>
+
+    <textarea class="textbox" name="message" id="name"  required placeholder="Typ hier de naam van de stakeholder"></textarea>
+<div class="flex">
     <a>
         <input type="submit" value="Opslaan">
     </a>
 </div>
+</div>
 
+
+</div>
 </form>
+
 
 </section>
 

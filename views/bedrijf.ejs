@@ -1,8 +1,9 @@
 <%- include('./partials/headinlog.ejs') %>
 
-<h2><%=company.name%></h2>
+<h1><%=company.name%></h1>
+<h2>Wat wilt u doen?</h2>
 
-<section>
+<section class="field">
   <a href="/addStakeholder/<%=company.id%>">
     <button>Stakeholders toevoegen</button>
   </a>

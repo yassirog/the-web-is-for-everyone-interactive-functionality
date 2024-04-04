@@ -126,8 +126,10 @@ app.post("/addStakeholder/:id", async function (request, response) {
         aangevinkteRadiobox = "omgeving";
     }
     
-    console.log(`Type: ${aangevinkteRadiobox}`);
+    console.log('Bedrijf: ' + bedrijfId);
+    console.log('Type: ' + aangevinkteRadiobox);
     console.log('Naam: ' + name)
+
 
     stakeholder.push(bedrijfId, aangevinkteRadiobox, name);
 
